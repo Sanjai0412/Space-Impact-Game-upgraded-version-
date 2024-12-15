@@ -1,0 +1,66 @@
+body{
+    height: 500px;
+}
+#game-interface{
+    height: 400px;
+    width: 1000px;
+    border: solid rgb(212, 211, 211)  1.6px ;
+    display: flex;
+}
+#obstacle-interface{
+    height: 400px;
+    width: 960px;
+    position: relative;
+    bottom: 401px;
+    left: 41px;
+}
+.obstacle-div{
+    height: 40px;
+    width: 30px;
+    position: relative;
+}
+.obstacle-header{
+    height: 10px;
+    width: 30px;
+
+    position: relative;
+}
+#ufo-div{
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+#ufo{
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+.ufo-bullet{
+    height: 5px;
+    width: 5px;
+    background-color: blue;
+    border-radius: 50px;
+    position: relative;
+}
+
+.obstacle{
+    height: 30px;
+    width: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(74, 74, 74);
+    position: relative;
+}
+
+#user-points{
+    position: relative;
+    bottom: 400px;
+}
+
+.boss{
+    height: 200px;
+    width: 50px;
+    position: relative;
+
+}
