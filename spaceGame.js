@@ -7,7 +7,7 @@ let userPointsHeader=document.getElementById('user-points');
 let gameOver=document.getElementById('game-over');
 
 
-let userPoints=5;  // setting user hip points as 5
+let userPoints=3;  // setting user hip points as 5
 let topp=0;  // used top set top value for ufo
 let bullets=[];   // for storing multiple bullets from ufo
 let obstacleCount=0;   // obstacle count to check the maximum limit of obstacles gegerated or not
@@ -48,7 +48,6 @@ function movingDown(object){
         topp+=3;
     }
 }
-
 
 // this interval for calling those function for each 250ms
 let interval = setInterval(()=>{
@@ -111,7 +110,7 @@ function createObstacles(){
 
     if( userPoints > 1 && obstacleCount < 4 ){  // checking the user points > 1 and obstacle < 4
             
-            let obstacleHipPoints=5;  // setting the obstacle points as 5 . every time this function called , the obstacle should be created and its hip points set as 5
+            let obstacleHipPoints = 5;  // setting the obstacle points as 5 . every time this function called , the obstacle should be created and its hip points set as 5
             
             // create element 'div' for obstacle div
             let obstacleDiv=document.createElement('div');
@@ -134,7 +133,6 @@ function createObstacles(){
             // this is for creating a random numbers for setting top position of the obstacle div
             obstacleDiv.style.top=Math.floor(Math.random()*350)+'px';
             
-   
             // this interval for moving obstacale div to left side as 20ms
             let interval=setInterval(()=>{
             
@@ -187,10 +185,9 @@ function createObstacles(){
                 }
                 },20)
             }
-    else if(shootedCount >= 1){  // if the shooter count > 1, then call the boss level
+    else if(shootedCount >= 3){  // if the shooter count > 1, then call the boss level
          bossLevel();
     }
-    
 }
 
 createObstacles(); // calling obstcale create function
